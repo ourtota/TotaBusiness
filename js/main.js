@@ -213,7 +213,7 @@
 	DOM.content = DOM.grid.parentNode;
 	DOM.gridItems = Array.from(DOM.grid.querySelectorAll('.grid__item'));
 	let items = [];
-	DOM.gridItems.forEach(item => items.push(new Item(item)));
+	DOM.gridItems.forEach(item => { if(item.hasAttribute('data-external-link')) return; items.push(new Item(item)); });
 
 	DOM.details = new Details();
 };
