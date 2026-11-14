@@ -465,3 +465,88 @@ p:last-child {
     font-size: 2.2em;
   }
 }
+
+/* === Modern refresh 2026-11-14: judul utama & tombol kekinian (latar TIDAK diubah) === */
+.tm-main-title {
+  font-size: clamp(46px, 6vw, 68px);
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 1.05;
+  padding-top: 0;
+  background: linear-gradient(92deg, #ffffff 20%, #ffd9e8 55%, #aee3ff 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  filter: drop-shadow(0 3px 12px rgba(0,0,0,0.45));
+}
+.tm-title-accent {
+  width: 88px;
+  height: 6px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #ff5f9e, #ffb35c, #39c2ff);
+  margin: 4px 0 20px auto;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.35);
+}
+.txt-type1 {
+  display: inline-block;
+  background: rgba(10, 12, 22, 0.45);
+  border: 1px solid rgba(255,255,255,0.28);
+  border-radius: 16px;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.6;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+.product {
+  border-radius: 26px;
+  background: rgba(12, 12, 20, 0.55);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+.product:hover {
+  background: linear-gradient(160deg, rgba(255,95,158,0.88), rgba(57,194,255,0.78));
+  transform: translateY(-5px);
+  box-shadow: 0 18px 34px rgba(0,0,0,0.35);
+  color: #ffffff;
+}
+.tm-nav-link {
+  border-radius: 26px;
+  border: 1px solid rgba(255,255,255,0.38);
+  background: linear-gradient(160deg, rgba(255,255,255,0.16), rgba(255,255,255,0.04));
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.25);
+  overflow: hidden;
+  transition: border-color 0.25s ease, background 0.25s ease;
+}
+.tm-nav-link:hover {
+  border-color: rgba(255,255,255,0.75);
+}
+.tm-nav-text {
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  bottom: 10px;
+  padding: 0 6px;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.55);
+}
+.btn {
+  border-radius: 999px;
+}
+.btn-primary, .tm-btn-submit {
+  background: linear-gradient(90deg, #ff5f9e, #39c2ff);
+  border: none;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+.btn-primary:hover, .tm-btn-submit:hover {
+  background: linear-gradient(90deg, #ff77ab, #55cfff);
+  border: none;
+}
+.details__bg--down {
+  border-radius: 24px;
+}
+.tm-copyright-text {
+  border-radius: 999px;
+}
