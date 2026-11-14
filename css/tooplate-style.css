@@ -468,7 +468,8 @@ p:last-child {
 
 /* === Modern refresh 2026-11-14: judul utama & tombol kekinian (latar TIDAK diubah) === */
 .tm-main-title {
-  font-size: clamp(46px, 6vw, 68px);
+  font-family: "Plus Jakarta Sans", "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: clamp(54px, 7vw, 80px);
   font-weight: 800;
   letter-spacing: 1px;
   line-height: 1.05;
